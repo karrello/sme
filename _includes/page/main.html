@@ -1,0 +1,9 @@
+<section>
+{%- if page.collection -%}
+  <h1 id="item">{{ page.title }} - {{ page.author }}</h2>
+  {{ content }}
+  {%- include buy_box.html -%}
+{%- else -%}
+  {{ content }}
+{%- endif -%}
+</section>

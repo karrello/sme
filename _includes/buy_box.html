@@ -1,0 +1,19 @@
+{%- assign karrello = site.data.karrello -%}
+{%- assign support = page.support | default: "lp" -%}
+{%- assign price = page.price | default: karrello.price[support].few -%}
+{%- assign wholesale = page.wholesale | default: karrello.price[support].many -%}
+<fieldset>
+  <legend>Buy</legend>
+  <p>Volume: <span id="volume">{{ page.volume | default: "-" }}</span></p>
+  <p>Support: <span id="support">{{ support | upcase }}</span></p>
+  <p>Price: <span>€ <span id="price">{{ price }}</span></span></p>
+  <p>Wholesale price ({{ karrello.wholesale }}+): <span>€ <span id="wholesale">{{ wholesale }}</span></span></p>
+  <p>Select quantity:
+  <select name="quantity" id="quantity">
+    {% for i in (0..karrello.max) %}
+      <option value="{{ i }}">{{ i }}</option>
+    {% endfor %}
+  </select></p>
+  <p>Subtotal: <span>€ <span id="subtotal">0</span></span></p>
+  <p><button type="button" id="addcart">Add to Cart</button></p>
+</fieldset>

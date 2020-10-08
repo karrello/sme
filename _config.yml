@@ -1,0 +1,23 @@
+timezone: Europe/Rome
+permalink: pretty
+plugins:
+  - jekyll-coffeescript
+  - jekyll-default-layout
+  - jekyll-github-metadata
+  - jekyll-titles-from-headings
+
+# used by github-metadata
+repository: karrello/sme
+
+# Output collection
+collections:
+  catalog:
+    output: true
+
+# Defaults
+defaults:
+  # Set default layout in collections
+  - scope:
+      type: catalog
+    values:
+      layout: default

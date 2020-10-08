@@ -1,0 +1,29 @@
+merchant: petrosh@petrosh.it
+currency: EUR
+
+# Items for wholesale prices and shipping
+wholesale: 3
+
+# Max item quantity
+max: 10
+
+# Prices for every support
+price:
+  lp:
+    few: 15
+    many: 9
+  dlp:
+    few: 20
+    many: 16
+
+# Shipping prices
+shipping:
+  italy:
+    few: 10
+    many: 15
+  europe:
+    few: 15
+    many: 20
+  world:
+    few: 20
+    many: 40
