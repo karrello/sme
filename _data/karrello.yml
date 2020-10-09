@@ -1,8 +1,16 @@
-merchant: petrosh@petrosh.it
-currency: EUR
+merchant: raveup@tiscali.it
+currency:
+  code: EUR
+  symbol: €
 
-# Items for wholesale prices and shipping
-wholesale: 3
+# Collections eanbled to sell
+collections:
+  - catalog
+
+# Items number for wholesale prices and shipping
+wholesale:
+  price: 3
+  shipping: 6
 
 # Max item quantity
 max: 10

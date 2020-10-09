@@ -2,7 +2,13 @@
 {%- if page.collection -%}
   <h1 id="item">{{ page.title }} - {{ page.author }}</h2>
   {{ content }}
-  {%- include buy_box.html -%}
+  {%- if site.data.karrello.collections contains page.collection -%}
+    {%- if page.soldout -%}
+      <p>SOLDOUT</p>
+    {%- else -%}
+      {%- include karrello/buy_box.html -%}
+    {%- endif -%}
+  {%- endif -%}
 {%- else -%}
   {{ content }}
 {%- endif -%}
