@@ -49,7 +49,7 @@ if $("#buy_box").length
       # Go to cart
       $("button, select").attr "disabled", "true"
       setInterval ->
-        window.location = "{{ site.baseurl }}/cart/"
+        window.location = "{{ site.baseurl }}/cart"
         return
       , 1000
     return
