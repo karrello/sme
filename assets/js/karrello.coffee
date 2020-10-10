@@ -132,6 +132,8 @@ if $("body").data("title") is "checkout"
       data-button='paynow'
       data-upload='1'
       data-host='www.sandbox.paypal.com'
+      data-return='https://karrello.github.io/sme/thankyou'
+      data-rm='2'
       data-type='form'
       data-currency='{{ karrello.currency.code }}'
       data-handling_cart='#{shipping}' "
