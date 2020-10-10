@@ -126,8 +126,12 @@ if $("body").data("title") is "checkout"
     total = +shipping + +$("#subtotal").text()
     $("#total").html total.toFixed 2
     # Create Paypal button
-    script = "<script async src='{{ site.baseurl }}/assets/js/paypal-button.min.js?merchant={{ karrello.merchant }}' data-button='paynow'
+    script = "<script
+      async
+      src='{{ site.baseurl }}/assets/js/paypal-button.min.js?merchant={{ karrello.merchant }}'
+      data-button='paynow'
       data-upload='1'
+      data-host='www.sandbox.paypal.com'
       data-type='form'
       data-currency='{{ karrello.currency.code }}'
       data-handling_cart='#{shipping}' "
