@@ -1,7 +1,7 @@
 ---
-author: α Author
-title: α Title
-volume: SME α
+author: Alpha Author
+title: Alpha Title
+volume: SME Alpha
 ---
 
-α description
+Alpha description

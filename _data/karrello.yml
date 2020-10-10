@@ -1,9 +1,11 @@
-merchant: raveup@tiscali.it
+merchant: petrosh@petrosh.it
+
+# Currency use three-character ISO-4217 codes
 currency:
   code: EUR
   symbol: €
 
-# Collections eanbled to sell
+# Collections enabled to sell
 collections:
   - catalog
 
