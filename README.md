@@ -1,6 +1,8 @@
 # sme
 Karrello for Sonor Music Editions
 
+Configuration file: [`_data/karrello.yml`](https://github.com/karrello/sme/blob/main/_data/karrello.yml)
+
 ```yml
 merchant: sb-vpvzq3424491@business.example.com
 
