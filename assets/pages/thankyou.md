@@ -1,0 +1,5 @@
+---
+permalink: thankyou
+---
+
+# Thank you
