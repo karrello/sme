@@ -2,6 +2,10 @@
 ---
 {%- assign karrello = site.data.karrello -%}
 
+# Return page
+if $("body").data("title") is "thank-you"
+  localStorage.clear("karrello")
+
 # Get cart
 cart = JSON.parse(localStorage.getItem("karrello") || "[]")
 
@@ -133,7 +137,7 @@ if $("body").data("title") is "checkout"
       data-upload='1'
       data-host='www.sandbox.paypal.com'
       data-return='https://karrello.github.io/sme/thankyou'
-      data-rm='2'
+      data-rm='1'
       data-type='form'
       data-currency='{{ karrello.currency.code }}'
       data-handling_cart='#{shipping}' "
