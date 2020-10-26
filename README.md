@@ -1,7 +1,7 @@
 # sme
 Karrello for Sonor Music Editions
 
-#### Implementation
+### Implementation
 
 **Files**
 
@@ -30,7 +30,7 @@ Karrello for Sonor Music Editions
 - Buy box in product page: `{%- include karrello/buy_box.html -%}`
 - Remove `sandbox.` in `data-host` inside `karrello.coffee`
 
-#### Items Front Matter
+### Items Front Matter
 
 ```yml
 ---
@@ -46,7 +46,7 @@ volume: SME Volume
 - `wholesale: 0.00`
 ```
 
-#### Configuration file: [`_data/karrello.yml`](https://github.com/karrello/sme/blob/main/_data/karrello.yml)
+### Configuration file: [`_data/karrello.yml`](https://github.com/karrello/sme/blob/main/_data/karrello.yml)
 
 ```yml
 merchant: sb-vpvzq3424491@business.example.com
@@ -90,7 +90,7 @@ shipping:
     many: 40
 ```
 
-#### Paypal ocumentation
+### Paypal ocumentation
 
 - [Archived **JavaScriptButtons** repository](https://web.archive.org/web/20161004203013/https://github.com/paypal/JavaScriptButtons)
 - [Archived **HTML variables** Dev Docs](https://web.archive.org/web/20161227211543/https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/)
