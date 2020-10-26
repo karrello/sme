@@ -1,6 +1,26 @@
 # sme
 Karrello for Sonor Music Editions
 
+#### Implementation
+
+**Files**
+
+- Paypal: `/assets/js/buttons.js` `/assets/js/paypal-button.minjs`
+- Karrello: `/assets/js/karrello.coffee`
+- Includes: `/_includes/karrello/buy_box.html` `_includes/karrello/cart.html`
+- Style: in `/assets/css/stylesheet.sass` the `// KARRELLO` section
+- Pages: `/assets/pages/cart.md` `/assets/pages/checkout.md` `/assets/pages/thankyou.md`
+- Configuration: `/_data/karrello.yml`
+
+**Code**
+
+- Include scripts in `<head>`: `karrello.js` `buttons.js`
+- Include style in `<head>`: `karrello.css`
+- Body `data-title`: `<body data-title="{{ page.title | slugify }}">`
+- Cart link: `<a href="{{ site.baseurl }}/cart" id="cart-link">View cart (<span>0</span>)</a>`
+- Buy box in product page: `{%- include karrello/buy_box.html -%}`
+- Remove `sandbox.` in `data-host` inside `karrello.coffee`
+
 #### Items Front Matter
 
 ```yml
@@ -60,7 +80,7 @@ shipping:
     many: 40
 ```
 
-#### Documentation
+#### Paypal ocumentation
 
 - [Archived **JavaScriptButtons** repository](https://web.archive.org/web/20161004203013/https://github.com/paypal/JavaScriptButtons)
 - [Archived **HTML variables** Dev Docs](https://web.archive.org/web/20161227211543/https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/Appx_websitestandard_htmlvariables/)
