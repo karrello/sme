@@ -38,9 +38,11 @@ author: Author
 title: Title
 volume: SME Volume
 ---
+```
 
 **Optional metadata**
 
+```yml
 - `soldout: true`
 - `price: 0.00`
 - `wholesale: 0.00`
