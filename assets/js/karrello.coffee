@@ -17,7 +17,7 @@ if $("#buy_box").length
   # Get elements
   price = +$("#price").text()
   wholesale = +$("#wholesale").text()
-  qt_wholesale = +{{ karrello.wholesale.price | default: 3 }}
+  qt_wholesale = +{{ karrello.wholesale.price | default: 1000 }}
   # Get quantity event
   $("#quantity").on "change", ->
     qt = +$(@).val()
@@ -121,7 +121,7 @@ if $("body").data("title") is "checkout"
     # Check if quantity is wholesale
     qt_total = cart.reduce ((acc, item) => +acc + +item.quantity), 0
     option = $(@).find("option:selected")
-    shipping = if qt_total < {{ karrello.wholesale.shipping }}
+    shipping = if qt_total < {{ karrello.wholesale.shipping | default: 1000 }}
       option.data "few"
     else
       option.data "many"
@@ -148,7 +148,6 @@ if $("body").data("title") is "checkout"
       data-quantity_#{k}='#{order.quantity}'
       data-item_number_#{k}='#{order.volume}' "
     script += "></script>"
-    console.log script
     $("#paypal-button")[0].innerHTML = script
     paypal.button.process $('#paypal-button')[0]
     return
