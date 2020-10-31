@@ -28,7 +28,8 @@ Karrello for Sonor Music Editions
 - Cart link:  
   `<a href="{{ site.baseurl }}/cart" id="cart-link">View cart (<span>0</span>)</a>`
 - Buy box in product page: `{%- include karrello/buy_box.html -%}`
-- Remove `sandbox.` in `data-host` inside `karrello.coffee`
+- Inside `karrello.coffee`  
+  remove `sandbox.` in `data-host` and change tankyou url in `data-return`
 
 ### Items Front Matter
 
