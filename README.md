@@ -11,7 +11,7 @@ Karrello for Sonor Music Editions
 - Karrello: `/assets/js/karrello.coffee`
 - Includes:  
   - `/_includes/karrello/buy_box.html`
-  - `_includes/karrello/cart.html`
+  - `/_includes/karrello/cart.html`
 - Style: in `/assets/css/stylesheet.sass` the `// KARRELLO` section
 - Pages:  
   - `/assets/pages/cart.md`
